@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color:  #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  text-decoration: none; /* Added to remove underline */
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+.footer {
+  background-color: #474e5d;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.box-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.box {
+  flex: 1;
+  padding: 0 20px;
+}
+
+.box h3 {
+  border-bottom: 2px solid white;
+  padding-bottom: 10px;
+}
+
+.box a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  margin: 10px 0;
+}
+
+.box a:hover {
+  text-decoration: underline;
+}
+
+.credit {
+  margin-top: 20px;
+  color: grey;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="about-section">
+  <h1>About Us.......</h1>
+  <p>ShoppyKart is an innovative e-commerce platform that has revolutionized online shopping with its user-friendly interface and extensive product range. The website is designed to provide a seamless and enjoyable shopping experience for customers of all ages and preferences. With a clean and intuitive layout, navigating through the platform is a breeze, allowing users to easily explore a diverse array of products.
+
+    ShoppyKary caters to a wide range of interests and needs, offering everything from fashion and electronics to home decor and beauty products. The platform prides itself on curating a selection of high-quality items from reputable brands, ensuring that customers receive not only a variety of choices but also products that meet the highest standards.
+    
+    One of the standout features of ShoppyKary is its commitment to customer satisfaction. The website incorporates user reviews and ratings, providing valuable insights for potential buyers. Additionally, a secure and efficient checkout process enhances the overall shopping experience, instilling confidence in customers as they make their purchases.
+    
+    Whether you're a tech enthusiast, a fashionista, or someone looking to spruce up your living space, ShoppyKary has something for everyone. With its commitment to quality, variety, and user satisfaction, ShoppyKary has become a go-to destination for online shoppers seeking both convenience and excellence.</p>
+
+</div>
+
+<h2 style="text-align:center">Our Team</h2>
+<div class="row">
+  <!-- Team member 1 -->
+  <div class="column">
+    <div class="card">
+      <img src="images/goutham.png" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2>Goutham Gudipudi</h2>
+        <p class="title">CEO & Founder</p>
+        <p>Student NAU</p>
+        <p>gg829@nau.edu</p>
+        <!-- Updated href attribute for the button -->
+        <a href="https://forms.gle/dT24JGiA8FCnRpkw9" class="button">Contact</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Team member 2 -->
+  <div class="column">
+    <div class="card">
+      <img src="images/gaddam.png" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>Gaddam Ganesh</h2>
+        <p class="title">Art Director</p>
+        <p>Student NAU</p>
+        <p>gg837@nau.edu</p>
+        <!-- Updated href attribute for the button -->
+        <a href="https://forms.gle/dT24JGiA8FCnRpkw9" class="button">Contact</a>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Team member 3 -->
+  <div class="column">
+    <div class="card">
+      <img src="images/goutham.png" alt="John" style="width:100%">
+      <div class="container">
+        <h2>Goutham Gudipudi</h2>
+        <p class="title">Designer</p>
+        <p>Student NAUSS</p>
+        <p>gg829@nau.edu</p>
+        <!-- Updated href attribute for the button -->
+        <a href="https://forms.gle/dT24JGiA8FCnRpkw9" class="button">Contact</a>
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="footer">
+  <div class="box-container">
+      <div class="box">
+          <h3>quick links</h3>
+          <a href="home.html">home</a>
+          <a href="products.html">products</a>
+          <a href="about.html">about</a>
+          <a href="https://forms.gle/dT24JGiA8FCnRpkw9">contact</a>
+      </div>
+      <div class="box">
+          <h3>follow us</h3>
+          <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook" aria-hidden="true"></i> facebook</a>
+          <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i> instagram</a>
+          <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube" aria-hidden="true"></i> youtube</a>
+      </div>
+      <div class="box">
+          <h3>contact us</h3>
+          <a href="tel:0654325678"><i class="fa fa-phone" aria-hidden="true"></i> phone: +19282259719</a>
+          <a href="mailto:omaimaaouane@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i> email: gg829@nau.edu</a>
+          <a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i> address: Flagstaff,Arizona-86001</a>
+      </div>
+  </div>
+  <div class="credit">created by <span>Goutham Gudipudi</span></div>
+</footer>
+
+</body>
+</html>
